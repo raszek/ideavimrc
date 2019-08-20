@@ -1,0 +1,19 @@
+set clipboard=unnamedplus,unnamed
+set surround
+set multiple-cursors
+set commentary
+set incsearch
+
+let mapleader = " "
+
+nmap <leader>pf :action GotoFile<cr>
+nmap <leader>sf :action FindInPath<cr>
+nmap <leader>ri :action ImplementMethods<cr>
+
+nmap <leader>fc :q!<cr>
+
+
+nmap <S-j> :tabp<CR>
+nmap <S-k> :tabn<CR>
+nmap <C-j> :join<CR>
+

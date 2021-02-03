@@ -3,17 +3,22 @@ set surround
 set multiple-cursors
 set commentary
 set incsearch
+set ideajoin
 
 let mapleader = " "
 
 nmap <leader>pf :action GotoFile<cr>
 nmap <leader>sf :action FindInPath<cr>
 nmap <leader>ri :action ImplementMethods<cr>
+nmap <leader>gb :action Annotate<cr>
+nmap <Leader>gs :action Vcs.QuickListPopupAction<CR>
+nmap <Leader>gd :action Compare.SameVersion<CR>
 
 nmap <leader>fc :q!<cr>
-
 
 nmap <S-j> :tabp<CR>
 nmap <S-k> :tabn<CR>
 nmap <C-j> :join<CR>
 
+vmap < <gv
+vmap > >gv
